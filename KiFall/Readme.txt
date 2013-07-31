@@ -1,6 +1,8 @@
 
 KiFall: Fall Detection System Using an Android Phone and the Kinect Sensor
 
+*The app is in Testing and Debugging Phase. Currently working on the interface and app design. 
+
 The fall detection system consists on:
 1. The Android detect if a fall has taken place. The detection algorithm is based on the acceleration and orientation sensor values
 2. If the fall is detected, the Android connects to the Kinect through a TCP server.
