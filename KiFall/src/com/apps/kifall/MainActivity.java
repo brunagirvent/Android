@@ -25,20 +25,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-/*KiFall: Fall Detection System Using an Android phone and the Kinect sensor
- The Android detect if a fall has taken place. 
- The detection algorithm is based on the acceleration and orientation sensor values
- If the fall is detected, the Android connects to the Kinect through a TCP server.
- The Kinect verifies if the fall has taken place. 
- The verification consists on track some joints (head, righHand and lefHand) and
- calculates the distance from the floor. 
- If the fall is verified, the Kinect takes a picture and the server sends the
- verification message and the picture to the Android. 
- The Android sends an MMS or SMS to the emergency contact containing 
- the time when the fall took place, the location, a link to Google Maps and the
- picture of the person laying down.
- */
-
+/*KiFall: Fall Detection System Using an Android phone and the Kinect sensor */
+ 
 public class MainActivity extends Activity {
 	
 	private SensorsService mSensorsService = null;
