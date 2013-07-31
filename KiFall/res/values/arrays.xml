@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phonePositions">
+        <item name="chest">chest</item>
+        <item name="waist">pocket</item>
+        <item name="pocket">waist</item>
+    </string-array>
+    
+     <string-array name="phoneOrientations">
+        <item name="chest">landscape</item>
+        <item name="waist">portrait</item>
+    </string-array>
+
+    
+</resources>

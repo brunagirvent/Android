@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory
+        android:title="Android"
+        android:key="Android_category">
+
+        <ListPreference
+            android:key="phone_position"
+            android:title="Position of the phone"
+            android:summary="Choose the position of the phone"
+            android:defaultValue="pocket"
+            android:entries="@array/phonePositions"
+            android:entryValues="@array/phonePositions"
+        />  
+        
+        <ListPreference
+            android:key="phone_orientation"
+            android:title="Orientation of the phone"
+            android:summary="Choose the orientation of the phone"
+            android:defaultValue="portrait"
+            android:entries="@array/phoneOrientations"
+            android:entryValues="@array/phoneOrientations"
+        /> 
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Server"
+        android:key="Server_category">
+        
+        <CheckBoxPreference
+            android:key="enable_kinect"
+            android:summary="Enable/disable the use of the Kinect to verify falls"
+            android:title="Enable Kinect's fall verification"
+            android:defaultValue="true"
+        />
+        <EditTextPreference
+            android:key="ip_adress"
+            android:title="IP adress"
+            android:summary="Introduce the Ip of the server where the Kinect is plugged in"
+            android:dialogTitle="Ip adress"
+            android:dialogMessage="Introduce the IP of the server"   
+            android:defaultValue="10.0.0.8" />
+        <EditTextPreference
+            android:key="port_number"
+            android:title="Port number"
+            android:summary="Introduce the port of the server where the Kinect is plugged in"
+            android:dialogTitle="Port number"
+            android:dialogMessage="Introduce the port to connect to the server" 
+            android:defaultValue="3200" />
+    </PreferenceCategory>
+    
+     <PreferenceCategory
+        android:title="Emergency"
+        android:key="Emergency_category">
+        <EditTextPreference
+            android:key="phone_number"
+            android:title="Emergency Contact"
+            android:summary="Introduce the telephone number of the emergency contact"
+            android:dialogTitle="Emergency Contact"
+            android:dialogMessage="Introduce the telephone number of the emergency contact" 
+            android:defaultValue="8572888527" />
+        </PreferenceCategory>
+
+    
+    
+    </PreferenceScreen>

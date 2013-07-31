@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiltKinect" >
+
+    <ImageButton
+        android:id="@+id/Down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/UP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/arrow"
+        android:onClick="Down"
+        android:rotation="90" />
+
+    <ImageButton
+        android:id="@+id/UP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Down"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="202dp"
+        android:background="@drawable/arrow"
+        android:onClick="Up"
+        android:rotation="-90" />
+
+</RelativeLayout>
